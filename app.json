@@ -1,30 +1,45 @@
 {
   "expo": {
-    "name": "daily-planner-ai",
+    "name": "Daily Planner AI",
     "slug": "daily-planner-ai",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/main-icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/main-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#667eea"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lucaspaiva.dailyplannerai",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.lucaspaiva.dailyplannerai",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+        "foregroundImage": "./assets/main-icon-foreground.png",
+        "backgroundColor": "#667eea"
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/main-icon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-build-properties"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "32dcb8e9-3a55-44c4-ac5c-cc8e45525c7b"
+      }
+    },
+    "owner": "lucaspcosta"
   }
 }
